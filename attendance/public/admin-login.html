@@ -1,0 +1,23 @@
+<!-- 📁 public/admin-login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Admin Login</h1>
+    <input type="email" id="adminEmail" placeholder="Admin Email" />
+    <input type="password" id="adminPassword" placeholder="Password" />
+    <button onclick="adminLogin()">Login</button>
+    <p><a href="index.html">Back to Teacher Login</a></p>
+  </div>
+
+ <script type="module" src="js/firebase-config.js"></script>
+
+  <script type="module" src="js/admin-login.js"></script>
+</body>
+</html>

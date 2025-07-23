@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard | GEC Sheikhpura</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2> GEC Sheikhpura</h2>
+    </div>
+    <div class="nav-right">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1> Teacher Dashboard</h1>
+
+    <!-- Add Student Form -->
+    <form id="addStudentForm" class="form">
+      <input type="text" id="name" placeholder="Student Name" required />
+      <input type="text" id="registration" placeholder="Registration Number" required />
+      <input type="text" id="semester" placeholder="Semester (e.g. CSE 2nd Year Sem 3 Sec A)" required />
+      <input type="text" id="subject" placeholder="Subject (e.g. DSA)" required />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <!-- Attendance Date Selector -->
+    <div class="attendance-controls">
+      <label for="attendanceDate">📅 Select Date:</label>
+      <input type="date" id="attendanceDate" max="" />
+    </div>
+
+    <!-- Student Table -->
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Reg No.</th>
+          <th>Semester</th>
+          <th>Subject</th>
+          <th>Present</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Report Button -->
+    <!-- <button class="report-btn" onclick="location.href='report.html'">📊 View Report</button> -->
+  </div>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
